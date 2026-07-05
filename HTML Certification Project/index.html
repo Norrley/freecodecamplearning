@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Favorite Dinosaur</h1>
+        <p id="description">Everyone has a favorite dinosaur, what's yours?</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information:</legend>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
+
+            <label id="number-label" for="number">Number:</label>
+            <input type="tel" id="number" min="1" max="11" placeholder="111-222-3333">
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorite Dinosaur</legend>
+                <select id="dropdown">
+                    <option>Tyrannosaurus Rex</option>
+                    <option>Spinosaurus</option>
+                    <option>Sarcosuchus</option>
+                    <option>Velociraptor</option>
+                    <option>Deinocheirus</option>
+                    <option>Stegosaurus</option>
+                    <option>Ankylosaurus</option>
+                    <option>Therizinosaurus</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which type of dinosaur is cooler?</legend>
+                <input type="radio" id="herbivore" name="dino-diet" value="Herbivore">
+                <label for="herbivore">Herbivore</label>
+                <input type="radio" id="carnivore" name="dino-diet" value="Carnivore">
+                <label for="carnivore">Carnivore</label>
+                <input type="radio" id="omnivore" name="dino-diet" value="Omnivore">
+                <label for="omnivore">Omnivore</label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Your favorite dinosaur's best traits:</legend>
+                <input type="checkbox" id="appearance" name="dino-trait" value="appearance">
+                <label for="appearance">Appearance</label>
+                <input type="checkbox" id="strength" name="dino-trait" value="strength">
+                <label for="strength">Strength</label>
+                <input type="checkbox" id="intelligence" name="dino-trait" value="intelligence">
+                <label for="intelligence">Intelligence</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional comments:</legend>
+                <textarea id="comments" cols="25" rows="8" placeholder="Share any additional information about your favorite dinosaur"></textarea>
+            </fieldset>
+
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
